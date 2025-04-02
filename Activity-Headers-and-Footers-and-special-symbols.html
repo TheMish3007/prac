@@ -1,39 +1,70 @@
 <!DOCTYPE html>
-<head>
-    <style>
-        .myheader {
-            text-align: center;
-            padding: 3px;
-            background-color: LightBlue;
-            color: rgb(78, 39, 248);
-        }
-        
-        .myfooter {
-            text-align: center;
-            padding: 3px;
-            background-color: rgb(67, 248, 91);
-            color: rgb(81, 17, 83);
-        }
-        
-        .myPic_border {
-            border: double;
-        }
+<html>
+    <head>
+        <style>
+            .myheader {
+                text-align: center;
+                padding: 3px;
+                background-color: LightBlue;
+                color: rgb(78, 39, 248);
+            }
+            
+            .myfooter {
+                text-align: center;
+                padding: 3px;
+                background-color: rgb(67, 248, 91);
+                color: rgb(81, 17, 83);
+            }
+            
+            .myPic_border {
+                border: double;
+            }
 
-        a:link {
-            color: green;
-            text-decoration: none;
-        }
+            a:link {
+                color: green;
+                text-decoration: none;
+            }
 
-        a:visited {
-            color: pink;
-            background-color: transparent;
-            text-decoration: none;
-        }
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
 
-        a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-    </style>
-</head>
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="myHeader">
+            <h1>A heading is here</h1>
+            <p>Posted by Eve</p>
+            <p>Some additional information here</p>
+        </header>
+        <p>Header ends here</p>
+        <hr>
+        <h2>Links</h2>
+        <p>The following are examples of styled links</p>
+        <h3>Styled links includes: link, visited link, hover link and active link</h3>
+        <p><a href="https://google.com">Default Link to Google</a></p>
+        <a href="#"><img class="myPic_border" src="link.png" alt="picture of a word link" title="link to nowhere"></a>
+        <p><button onclick="document.location='https://google.com'">Button as a link</button></p>
+        <hr>
+        <p>Footer starts below this line</p>
+        <hr>
+        <footer class="myfooter">
+            <p>Author: Eve</p>
+            <p><a href="mailto:eve.mcgillicuddy@studytafensw.edu.au">Send email to Eve</a></p>
+            <p><h2>Copyright 2025: &copy; Eve McGillicuddy &#174; TAFE NSW</h2></p>
+        </footer>
+    </body>
+</html>
